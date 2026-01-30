@@ -1,10 +1,10 @@
 
 ## 📊 Dashboard Interactivo
 
-![Click en el enlace para acceder al Dashboard](Images\el_reparto_en_datos.png)
+!(Images\el_reparto_en_datos.png)
 
 (https://public.tableau.com/views/Proyecto_Friends_17659698423520/Bienvenida?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-*Haz clic en la imagen de arriba para explorar el dashboard interactivo en Tableau Public.
+
 
 # 📺 The One Where We Analyze Everything: El capítulo donde lo analizamos todo.
 
