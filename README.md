@@ -1,67 +1,65 @@
-📊 Práctica de Importación y Gestión de Datos en Tableau (Serie Friends)
 
-🎯 Objetivo General
+## 📊 Dashboard Interactivo
+![Click en el enlace para ver el Dashboard](Images\el_reparto_en_datos.png)
 
-El objetivo de estas sesiones es practicar la importación y gestión de datos en Tableau, utilizando varias fuentes de datos relacionadas con la icónica serie Friends. Aplicaremos habilidades clave como la inspección de columnas, el ajuste de formatos, la combinación de fuentes y la exploración de datos.
+(https://public.tableau.com/views/Proyecto_Friends_17659698423520/Bienvenida?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+*Haz clic en la imagen de arriba para explorar el dashboard interactivo en Tableau Public.
 
-🛠️ Pair 1: Preparación de Datos y EDA
+# 📺 The One Where We Analyze Everything: El capítulo donde lo analizamos todo.
 
-Objetivo
+> "¿Alguna vez habéis estado en una terraza y todo el mundo empieza a hablar de Friends… y tú sonríes, asientes… pero en realidad no tienes ni idea de quién es Ross? Bueno, nosotras somos esas personas.
+> Nunca habíamos visto Friends. Y este proyecto nace de ahí: queríamos dejar de sentirnos culturalmente excluidas. Pero en lugar de vernos las 10 temporadas en un fin de semana, decidimos hacer algo diferente: **usar los datos para entender por qué Friends es TAN importante.**"
 
-El objetivo de esta sesión es tener los datos preparados para poder hacer las visualizaciones. Para ello necesitamos hacer una serie de transformaciones.
-Para realizar las transformaciones necesarias, lo primero que necesitamos es conocer nuestros datos correctamente. El primer paso debería ser hacer un pequeño EDA (Análisis Exploratorio de Datos).
+Este proyecto, desarrollado bajo el marco de **Adalab**, es el resultado de una investigación colaborativa donde los datos y la IA sustituyen a los maratones de televisión para descubrir el fenómeno detrás de la sitcom más icónica de la historia.
 
-📈 Pair 2: Creación de Visualizaciones Básicas
-1. Big Numbers (Indicadores Clave)
-Objetivo: Familiarizarse con métricas clave y funciones de agregación.
+---
 
-Indicador	Función de Agregación
-Número de episodios	Conteo total
-Número de temporadas	Valores únicos
-Puntuación media en IMDb	Promedio
-Millones de visualizaciones	Suma
+## 🤝 Colaboración y Equipo
 
-Exportar a Hojas de cálculo:
+desarrollado de forma conjunta por:
 
-2. Gráfico de Barras
-Objetivo: Comparar categorías usando codificación visual dual (altura + color).
+* **Gisela Barroso** | **Nieves Pérez** | El Dashboard incluye acciones de URL dinámicas que permiten conectar directamente con nuestros perfiles profesionales.
+---
 
-3. Gráfico de Líneas
-Objetivo: Analizar tendencias temporales.
+## 📊 Estructura del Análisis
 
-4. Histograma
-Objetivo: Entender la distribución de audiencia.
+El dashboard ha sido diseñado como un viaje de descubrimiento estructurado en tres bloques clave:
 
-5. Gráfico Circular (Quotes por Author)
-Objetivo: Identificar proporciones en una variable categórica.
+### 1. "Una historia de popularidad"
 
-🎨 Pair 3: Personalización, Filtros y Formato del Dashboard
+Analizamos el impacto global y la evolución de la serie. Utilizamos los datasets `friends_info.csv` y `friends_episodes_v3` para visualizar audiencias millonarias y puntuaciones de IMDb, entendiendo qué episodios convirtieron a la serie en un hito histórico.
 
-personalizar nuestras gráficas y a dar formato a nuestro Dashboard.
+### 2. "Ellos son los verdaderos protagonistas"
 
-1. Filtro Top N
-Objetivo: En alguna de nuestras visualizaciones tenemos demasiadas categorías y eso nos crea una gráfica con demasiados datos que es difícil de leer. En este caso vamos a aplicar un filtro Top N para que se muestren las categorías principales.
+Profundizamos en el reparto y su relevancia. A través de métricas comparativas y filtros dinámicos, exploramos la presencia de los personajes y cómo su peso en la trama evolucionó a lo largo de las 10 temporadas.
 
-2. Mostrar Filtro (por Temporadas)
-Objetivo: Para poder analizar y entender correctamente los datos y poder encontrar patrones, necesitamos poder filtrar por alguna categoría. Para este ejercicio vamos a añadir un filtro por temporadas al gráfico anterior. Esto nos permite poder ver la evolución de los protagonistas a lo largo de las distintas temporadas y saber si ha cambiado su presencia.
+### 3. "¿Quién dijo qué? y ¿Cómo lo dijo?" (IA y Sentimientos)
 
-3. Descripciones Emergentes (Tooltips)
-Objetivo: Las descripciones emergentes nos pueden mostrar más variables y ofrecer más información sobre los datos que estamos visualizando. Para poder hacer esto de forma correcta, deben tener un diseño claro y unos nombres descriptivos de las variables.
+Para una comprensión profunda de la psique de los personajes sin haber visto la serie, hemos integrado **Inteligencia Artificial**:
 
-4. Añadir Imagen
-Objetivo: Uno de los elementos para personalizar nuestro trabajo es la inserción de imágenes. En este caso, aprovecharemos la estética conocida de la serie.
+* **NLP con Hugging Face:** Aplicamos modelos de lenguaje avanzados como `sentiment_analyzer` para procesar el dataset `friends_quotes`.
+* **Análisis de Emociones:** Clasificamos los diálogos para entender el tono emocional de cada protagonista.
+* **Potencia de VizQL:** Utilizamos el motor **VizQL de Tableau** para realizar consultas visuales complejas sobre estas emociones, permitiendo identificar patrones afectivos y arcos de personalidad de forma dinámica.
 
-5. Contenedores
-Objetivo: En el primer boceto del Dashboard, los Big Numbers que habíamos añadido no estaban cuadrados y la estética no era la adecuada. Utilizaremos contenedores para organizar y alinear estos elementos.
+---
 
-🧼 Pair 4: Limpieza de Datos y Campos Calculados
-Al ir realizando este proyecto, hemos podido detectar que hay alguna incostistencia en los datos. Vamos a ver cómo podemos corregir esto usando campos calculados.
+## ☕ Entre Cafés y Frases: Seis voces, un juego
 
-1. Limpieza columna Author
-Objetivo: Los datos que hemos mostrado en nuestro gráfico de Donut no son del todo correctos, algunos nombres están escritos de distintas maneras (ej: "Rachel" y "RACHEL"). Necesitamos un campo calculado para unificar los nombres de los autores en el archivo quotes.csv.
+Como broche de oro, hemos creado un dashboard interactivo diseñado para que conectéis con los personajes de la misma forma que lo hicimos nosotras.
+### ☕ [Haz clic aquí para abrir el Dashboard interactivo: "Entre cafés y frases"](https://public.tableau.com/views/Proyecto_Friends_17659698423520/Bienvenida?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-2. Buscando la frase mítica
-Objetivo: Una de las frases más repetidas e importantes de la serie es: "oh my god". Vamos a utilizar nuestros conocimientos de campos calculados para contar o destacar esta frase.
+**OS ANIMAMOS A QUE LO PROBÉIS:**
 
-3. Crear campo de Capítulo y Temporada
-Objetivo: Queremos ver el detalle de visualizaciones por temporada y capítulo. Para poder visualizar esto de la forma correcta, tenemos que crear un campo calculado que una en una misma cadena de texto el número de temporada y el número de capítulo (ej: "T01-E05").
+> “Cada punto es una frase. Todas juntas dibujan la esencia de Friends: muchas voces, muchas personalidades, todo ocurriendo a la vez. Pasad el ratón por los puntos. Leed las frases. No busquéis contexto: solo sentid el tono. Después de escucharles hablar, ya no son seis desconocidos.”
+
+---
+
+## 🛠️ Ingeniería de Datos y Stack
+
+* **Visualización:** Tableau Desktop / Public (Motor VizQL).
+* **Inteligencia Artificial:** Modelos de **Hugging Face** (`sentiment_analyzer`).
+* **Datasets:** `friends_episodes_v3`, `friends_info.csv` y `friends_quotes`.
+* **Metodología:** Análisis Colaborativo / Pair Programming.
+
+**NO VIMOS FRIENDS, PERO LOS DATOS SÍ.**
+
