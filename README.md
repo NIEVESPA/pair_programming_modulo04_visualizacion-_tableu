@@ -1,9 +1,7 @@
 
 ## 📊 Dashboard Interactivo
 
-![Accede a este Dasboard a través del link](Images\el_reparto_en_datos.png)
-
-https://public.tableau.com/views/Proyecto_Friends_17659698423520/Bienvenida?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+[![Accede a este Dashboard](images/tableau_historia_datos_friends.png)](https://public.tableau.com/views/Proyecto_Friends_17659698423520/Bienvenida?:language=es-ES&:redirect=auth)
 
 
 # 📺 The One Where We Analyze Everything: El capítulo donde lo analizamos todo.
